@@ -1,159 +1,251 @@
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Customised for Dorcas Kabutie
+	Inspired by Cynthia Nafula's portfolio (cyniec.github.io) — fellow Kenyan data analyst on the same theme
 -->
 <html>
 	<head>
-		<title>Dorcas Kabutie Portfolio</title>
+		<title>Dorcas Kabutie | Data Scientist & IT Professional</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ── Pink accent override ─────────────────────────── */
+			/* Replaces the default orange/red with a warm rose-pink */
+
+			a { color: #c2185b; }
+			a:hover { color: #e91e8c; }
+
+			/* Buttons */
+			.button, button,
+			input[type="submit"],
+			input[type="reset"],
+			input[type="button"] {
+				background-color: #271019 !important;
+				border-color: #25161c !important;
+				color: #fff !important;
+			}
+			.button:hover, button:hover,
+			input[type="submit"]:hover {
+				background-color: #1f1319 !important;
+				border-color: #553848 !important;
+			}
+			.button.primary {
+				background-color: #824d62 !important;
+				border-color: #824d62 !important;
+			}
+
+			/* Nav active underline */
+			#nav ul.links li.active a {
+				color: #fff !important;
+				border-bottom: 2px solid #f48fb1 !important;
+			}
+			#nav ul.links a:hover { color: #f8bbd0 !important; }
+
+			/* Date badges above article titles */
+			article header .date,
+			article header span.date,
+			.post header .date {
+				color: #956680 !important;
+				border-color: #f48fb1 !important;
+			}
+
+			/* Header logo hover */
+			#header .logo:hover {
+				background-color: #271019 !important;
+				border-color: #25161c !important;
+			}
+
+			/* Social icons */
+			#nav ul.icons a:hover,
+			#footer ul.icons.alt a:hover {
+				background-color: #271019 !important;
+				border-color: #25161c !important;
+			}
+
+			/* Intro button */
+			#intro .button {
+				border-color: #f48fb1 !important;
+			}
+			#intro .button:hover {
+				background-color: #271019 !important;
+				border-color: #25161c !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper" class="fade-in">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Dorcas<br />Kabutie</h1>
+				<p>Data Scientist &amp; IT Professional · Nairobi, Kenya<br />
+				I turn data into decisions that matter for real people.</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Projects</a></li>
+				</ul>
+			</div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Dorcas Kabutie</h1>
-						<p>A Tech Enthusiast with IT and Data Science Background<a href="https://html5up.net/license">Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Dorcas Kabutie</a>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">MyPortfolio</a>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">Projects</a></li>
+					<li><a href="generic.html">About</a></li>
+					<li><a href="elements.html">Resume</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/dorcas-kabutie-4837a0254/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/Kabutie" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Featured Project (same pattern as Cynthia's top project) -->
+				<article class="post featured">
+					<header class="major">
+						<span class="date">Featured · Live App</span>
+						<h2><a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/" target="_blank">AdolescentMind</a></h2>
+						<p>A machine learning app predicting anxiety and depression severity among high school students across Nairobi, Kiambu, Makueni and Machakos counties. Built in Python, deployed on Streamlit — because mental health data should lead to action.</p>
 					</header>
+					<a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/" class="image main" target="_blank">
+						<img src="images/Adolescents.jpg" alt="AdolescentMind" />
+					</a>
+					<ul class="actions special">
+						<li><a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/" class="button large primary" target="_blank">View Live App</a></li>
+						<li><a href="https://github.com/Kabutie/Depression-Anxiety-predictor-for-High-School-Students-in-Kenya" class="button large" target="_blank">Source Code</a></li>
+					</ul>
+				</article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">About</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Services</a></li>
+				<!-- Projects grid -->
+				<section class="posts">
+
+					<article>
+						<header>
+							<span class="date">Dart · Flutter · Mobile</span>
+							<h2><a href="https://github.com/Kabutie/Insurance-System" target="_blank">Car Insurance<br />Management System</a></h2>
+						</header>
+						<a href="https://github.com/Kabutie/Insurance-System" class="image fit" target="_blank">
+							<img src="images/accident.jpg" alt="Car Insurance System" />
+						</a>
+						<p>Cross-platform mobile app helping Kenyan car owners choose the right insurance cover — weighing accident, theft, and fire risk to recommend the best financial protection.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/Kabutie/Insurance-System" class="button" target="_blank">View Project</a></li>
 						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/dorcas-kabutie-4837a0254/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/Kabutie" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</article>
+
+					<article>
+						<header>
+							<span class="date">Python · Scikit-learn · Telecom</span>
+							<h2><a href="https://github.com/Kabutie/SyriaTel-" target="_blank">SyriaTel<br />Churn Prediction</a></h2>
+						</header>
+						<a href="https://github.com/Kabutie/SyriaTel-" class="image fit" target="_blank">
+							<img src="images/pic02.jpg" alt="SyriaTel Churn Prediction" />
+						</a>
+						<p>Classification model identifying telecom customers at risk of churning, with feature engineering and retention strategy recommendations built for real business use.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/Kabutie/SyriaTel-" class="button" target="_blank">View Project</a></li>
 						</ul>
-					</nav>
+					</article>
 
-				<!-- Main -->
-					<div id="main">
+					<article>
+						<header>
+							<span class="date">Python · EDA · Aviation Safety</span>
+							<h2><a href="https://github.com/Kabutie/Aircraft-analysis" target="_blank">Aircraft Safety<br />Analysis</a></h2>
+						</header>
+						<a href="https://github.com/Kabutie/Aircraft-analysis" class="image fit" target="_blank">
+							<img src="images/pic03.jpg" alt="Aircraft Safety Analysis" />
+						</a>
+						<p>Exploratory analysis of aviation incident records identifying safety patterns by cause, severity, and aircraft type — actionable insights for policy and operations.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/Kabutie/Aircraft-analysis" class="button" target="_blank">View Project</a></li>
+						</ul>
+					</article>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/">Classification<br />
-									Problem</a></h2>
-									<p>A Project that predicts the severity of Anxiety and Depression among Adolescents in Kenya.</p>
-								</header>
-								<a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/" class="image main"><img src="images/Adolescents.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://depression-anxiety-predictor-for-high-school-students-in-kenya.streamlit.app/" class="button large">View Project</a></li>
-								</ul>
-							</article>
+					<article>
+						<header>
+							<span class="date">Python · Business Intelligence · Film</span>
+							<h2><a href="https://github.com/Kabutie/Movie-Studio-Analysis" target="_blank">Movie Studio<br />Market Analysis</a></h2>
+						</header>
+						<a href="https://github.com/Kabutie/Movie-Studio-Analysis" class="image fit" target="_blank">
+							<img src="images/pic04.jpg" alt="Movie Studio Market Analysis" />
+						</a>
+						<p>Deep dive into global box office data translating raw industry numbers into strategic content investment recommendations for a studio entering the market.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/Kabutie/Movie-Studio-Analysis" class="button" target="_blank">View Project</a></li>
+						</ul>
+					</article>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/Kabutie/Insurance-System">Car Insurance<br />
-										System</a></h2>
-									</header>
-									<a href="https://github.com/Kabutie/Insurance-System" class="image fit"><img src="images/accident.jpg" alt="" /></a>
-									<p>An Application that utilizes Dart and Flutter to help car owners select the most suitable cover to provide financial protection against Vehicle-related accidents, theft and fire.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Kabutie/Insurance-System" class="button">View Project</a></li>
-									</ul>
-								</article>
-							
-							</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Nairobi, Kenya</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+254) 792-450-103</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">kabutiedorcas@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-	                                <li><a href="https://www.linkedin.com/in/dorcas-kabutie-4837a0254/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							        <li><a href="https://github.com/Kabutie" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; kabutiedorcas
-					</div>
+				</section>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>Nairobi, Kenya</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:+254792450103">+254 792 450 103</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:kabutiedorcas@gmail.com">kabutiedorcas@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/dorcas-kabutie-4837a0254/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Kabutie" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
 
+			<div id="copyright">
+				<ul><li>&copy; Dorcas Kabutie 2025</li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
